@@ -1,0 +1,62 @@
+{
+  "additionalDatasets": {
+    "stockPrices": {
+      "labels": ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06"],
+      "data": [150, 165, 155, 180, 175, 190],
+      "label": "Stock Price ($)"
+    },
+    
+    "websiteTraffic": {
+      "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      "data": [1200, 1900, 3000, 5000, 2000, 3000, 2500],
+      "label": "Daily Visitors"
+    },
+    
+    "productCategories": {
+      "labels": ["Electronics", "Clothing", "Food", "Books", "Home"],
+      "data": [35, 25, 20, 10, 10],
+      "label": "Sales by Category (%)"
+    },
+    
+    "employeeSatisfaction": {
+      "labels": ["Very Satisfied", "Satisfied", "Neutral", "Dissatisfied", "Very Dissatisfied"],
+      "data": [45, 30, 15, 7, 3],
+      "label": "Employee Satisfaction Survey"
+    },
+    
+    "projectTimeline": {
+      "labels": ["Planning", "Design", "Development", "Testing", "Deployment"],
+      "data": [2, 3, 8, 2, 1],
+      "label": "Project Phases (weeks)"
+    },
+    
+    "energyConsumption": {
+      "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+      "data": [320, 310, 290, 270, 250, 240],
+      "label": "Energy Usage (kWh)"
+    }
+  },
+  
+  "realTimeData": {
+    "cpuUsage": {
+      "current": 45,
+      "history": [40, 42, 45, 43, 45, 47, 45]
+    },
+    
+    "memoryUsage": {
+      "current": 68,
+      "history": [65, 66, 67, 68, 68, 69, 68]
+    },
+    
+    "networkTraffic": {
+      "in": 1250,
+      "out": 890
+    }
+  },
+  
+  "apiEndpoints": {
+    "getChartData": "/api/charts/:chartId",
+    "updateChartData": "/api/charts/:chartId/update",
+    "exportChart": "/api/charts/:chartId/export"
+  }
+}

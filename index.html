@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graphs Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Graphs Dashboard</h1>
+        <p>Explore data through beautiful, interactive visualizations</p>
+    </header>
+
+    <nav>
+        <button class="nav-btn active" data-section="overview">Overview</button>
+        <button class="nav-btn" data-section="line-charts">Line Charts</button>
+        <button class="nav-btn" data-section="bar-charts">Bar Charts</button>
+        <button class="nav-btn" data-section="pie-charts">Pie Charts</button>
+        <button class="nav-btn" data-section="scatter-plots">Scatter Plots</button>
+    </nav>
+
+    <main>
+        <section id="overview" class="section active">
+            <h2>Dashboard Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Data Points</h3>
+                    <p class="stat-number">1,247</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Charts</h3>
+                    <p class="stat-number">8</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Last Updated</h3>
+                    <p class="stat-number">2 min ago</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="line-charts" class="section">
+            <h2>Line Charts</h2>
+            <div class="chart-container">
+                <canvas id="salesChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="temperatureChart"></canvas>
+            </div>
+        </section>
+
+        <section id="bar-charts" class="section">
+            <h2>Bar Charts</h2>
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <canvas id="populationChart"></canvas>
+            </div>
+        </section>
+
+        <section id="pie-charts" class="section">
+            <h2>Pie Charts</h2>
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="marketShareChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="budgetChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="scatter-plots" class="section">
+            <h2>Scatter Plots</h2>
+            <div class="chart-container">
+                <canvas id="correlationChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Graphs Dashboard. Built with Chart.js</p>
+    </footer>
+
+    <script src="js/graphs.js"></script>
+</body>
+</html>
